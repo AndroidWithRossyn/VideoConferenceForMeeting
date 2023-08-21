@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D212D</color>
+    <color name="colorOnPrimary">#15A7EF</color>
+    <color name="colorAccent">#1D212D</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#9E9D9D</color>
+    <color name="colorshadow">#03A908F4</color>
+    <color name="colorshadow2">#0AA908F4</color>
+    <color name="colorstatasbar">#9D09EC</color>
+    <color name="greyClr">#A8A8A8</color>
+    <color name="colorbgSelct">#66323137</color>
+    <color name="color2">#B2B2B2</color>
+    <color name="txtClr">#4E4E4E</color>
+    <color name="radioBtn">#38DD35</color>
+    <color name="colorOnBackground">#A708F3</color>
+    <color name="dialog_txt">#434343</color>
+    <color name="bg_call">#80FCF5FF</color>
+    <color name="green">#19B00B</color>
+    <color name="uncheckClr">#D1D1D6</color>
+    <color name="setxtClr">#595959</color>
+    <color name="viewBg">#F0CFFF</color>
+    <color name="lib_sb_color_normal_view">#E3E3E3</color>
+    <color name="lib_sb_stroke_color_normal_view">#D2D2D2</color>
+    <color name="lib_sb_color_checked_view">#4AD863</color>
+    <color name="lib_sb_stroke_color_checked_view">@color/lib_sb_color_checked_view</color>
+    <color name="lib_sb_color_thumb_view">#FFFFFF</color>
+    <color name="lib_sb_stroke_color_thumb_view">#D2D2D2</color>
+    <color name="roomClr">#FFC917</color>
+    <color name="navTxt">#15A7EF</color>
+    <color name="colorWhite50">#80FFFFFF</color>
+    <color name="colorBg">#1D212D</color>
+    <color name="colorWhite05">#F2FFFFFF</color>
+    <color name="colorWhite25">#40FFFFFF</color>
+</resources>

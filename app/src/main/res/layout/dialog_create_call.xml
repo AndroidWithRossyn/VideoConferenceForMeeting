@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_20dp"
+            app:cardBackgroundColor="@color/colorBg"
+            app:cardCornerRadius="@dimen/_20dp"
+            app:layout_constraintDimensionRatio="1053:1281"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/colorOnPrimary"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_join_conf"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_6dp">
+
+                <ImageView
+                    android:id="@+id/mIVClose"
+                    android:layout_width="@dimen/_24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_10dp"
+                    android:src="@drawable/ic_close_warning" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="center_horizontal"
+                    android:text="Create New Meeting"
+                    android:textAppearance="@style/TextAppearance.MyApp.Body1"
+                    android:textColor="@color/colorOnPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:gravity="center_horizontal"
+                    android:text="Sharing this joining info with people that\nyou want in the meeting"
+                    android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                    android:textColor="@color/colorWhite05" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_20dp"
+                    android:layout_marginEnd="@dimen/_20dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/codeBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/textbox_style"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Room Code"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20dp"
+                    android:layout_marginEnd="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_20dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="@dimen/_22dp"
+                        app:strokeColor="@color/colorOnPrimary"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/mTxtShare"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_44dp"
+                            android:gravity="center"
+                            android:text="@string/sharecode"
+                            android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                            android:textColor="@color/colorWhite" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/mTxtJoin"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_44dp"
+                        android:layout_marginStart="@dimen/_20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_gradiant_stroke"
+                        android:backgroundTint="@color/colorOnPrimary"
+                        android:gravity="center"
+                        android:text="@string/joi_meeting"
+                        android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

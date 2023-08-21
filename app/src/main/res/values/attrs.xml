@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadowLayout">
+        <attr name="layout_gravity" format="string" />
+    </declare-styleable>
+    <declare-styleable name="LibSwitchButton">
+        <attr name="sbImageNormal" format="reference"/>
+        <attr name="sbImageChecked" format="reference"/>
+        <attr name="sbImageThumb" format="reference"/>
+        <attr name="sbIsChecked" format="boolean"/>
+        <attr name="sbMargins" format="dimension"/>
+        <attr name="sbMarginLeft" format="dimension"/>
+        <attr name="sbMarginTop" format="dimension"/>
+        <attr name="sbMarginRight" format="dimension"/>
+        <attr name="sbMarginBottom" format="dimension"/>
+        <attr name="sbIsNeedToggleAnim" format="boolean"/>
+        <attr name="sbIsDebug" format="boolean"/>
+    </declare-styleable>
+</resources>

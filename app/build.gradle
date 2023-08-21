@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.videomeetings.conference'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.videomeetings.conference"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+            universalApk false
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'com.airbnb.android:lottie:4.1.0'
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'io.github.meetsl:SCardView:1.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //firebase
+//    implementation platform('com.google.firebase:firebase-bom:28.4.1')
+    implementation 'com.google.firebase:firebase-analytics'
+//    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+//    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+//    implementation 'com.google.firebase:firebase-config'
+//    implementation 'com.google.firebase:firebase-messaging'
+    //ads
+//    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    implementation 'com.google.firebase:firebase-config:21.2.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+
+    implementation 'com.google.android.gms:play-services-ads-lite:21.5.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+//    implementation ('org.jitsi.react:jitsi-meet-sdk:3.10.2') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:7.0.1') { transitive = true }
+}

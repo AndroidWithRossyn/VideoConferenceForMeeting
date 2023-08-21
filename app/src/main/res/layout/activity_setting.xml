@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/native_ads"
+        android:layout_marginTop="@dimen/_26dp"
+        android:layout_marginBottom="@dimen/_26dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginEnd="@dimen/_26dp">
+
+            <ImageView
+                android:id="@+id/mIVBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="?attr/actionBarItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/_6dp"
+                android:src="@drawable/ic_back"
+                android:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_40dp"
+                android:layout_marginEnd="@dimen/_40dp"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_10dp"
+                android:text="@string/setting"
+                android:textAppearance="@style/TextAppearance.MyApp.Subtitle1"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mTxtNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginTop="@dimen/_14dp"
+            android:layout_marginEnd="@dimen/_26dp"
+            android:layout_marginBottom="@dimen/_14dp"
+            android:text="@string/notification"
+            android:textAppearance="@style/TextAppearance.MyApp.Caption"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginEnd="@dimen/_26dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/allowNoti"
+                android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                android:textColor="@color/setxtClr" />
+
+            <com.videomeetings.conference.switchbutton.FSwitchButton
+                android:id="@+id/mFBNoti"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                app:sbIsChecked="false"
+                app:sbIsDebug="true"
+                app:sbIsNeedToggleAnim="false"
+                app:sbMarginBottom="2dp"
+                app:sbMarginLeft="0dp"
+                app:sbMarginRight="2dp"
+                app:sbMarginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginEnd="@dimen/_26dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sound"
+                android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                android:textColor="@color/setxtClr" />
+
+            <com.videomeetings.conference.switchbutton.FSwitchButton
+                android:id="@+id/mFBSound"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                app:sbIsChecked="false"
+                app:sbIsDebug="true"
+                app:sbIsNeedToggleAnim="false"
+                app:sbMarginBottom="2dp"
+                app:sbMarginLeft="0dp"
+                app:sbMarginRight="2dp"
+                app:sbMarginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginEnd="@dimen/_26dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vibration"
+                android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                android:textColor="@color/setxtClr" />
+
+            <com.videomeetings.conference.switchbutton.FSwitchButton
+                android:id="@+id/mFBVibration"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                app:sbIsChecked="false"
+                app:sbIsDebug="true"
+                app:sbIsNeedToggleAnim="false"
+                app:sbMarginBottom="2dp"
+                app:sbMarginLeft="0dp"
+                app:sbMarginRight="2dp"
+                app:sbMarginTop="2dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:background="@color/viewBg" />
+
+        <TextView
+            android:id="@+id/mTxtdnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginEnd="@dimen/_26dp"
+            android:layout_marginBottom="@dimen/_14dp"
+            android:text="@string/donot"
+            android:textAppearance="@style/TextAppearance.MyApp.Caption"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_26dp"
+            android:layout_marginEnd="@dimen/_26dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dnd"
+                android:textAppearance="@style/TextAppearance.MyApp.Caption"
+                android:textColor="@color/setxtClr" />
+
+            <com.videomeetings.conference.switchbutton.FSwitchButton
+                android:id="@+id/mFBNDnd"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                app:sbIsChecked="false"
+                app:sbIsDebug="true"
+                app:sbIsNeedToggleAnim="false"
+                app:sbMarginBottom="2dp"
+                app:sbMarginLeft="0dp"
+                app:sbMarginRight="2dp"
+                app:sbMarginTop="2dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:background="@color/viewBg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/native_ads"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingBottom="@dimen/_4dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+</RelativeLayout>
